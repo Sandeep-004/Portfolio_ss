@@ -1,0 +1,1067 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{margin: 0; padding: 0;box-sizing: border-box; font-family: 'Lora', serif; font-weight: 400;}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Home section */
+
+.Header {
+
+  /* background-image: linear-gradient(45deg, #40b0bd, #0083B0); */
+
+  background-color: #40b0bd;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding: 2.5rem;
+  margin-top: 1rem;
+
+}
+
+
+
+.menu {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff !important;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  
+}
+
+a:hover {
+
+  color: #fff !important;
+  border-bottom: .2rem solid  #fff;
+  text-decoration: none !important;
+
+
+}
+
+a {
+  color: #fff !important;
+  text-decoration: none; 
+
+}
+
+.menu li {
+  list-style-type: none;
+  margin: 2rem;
+}
+
+
+.dots {
+
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: -1;
+  height: .5rem;
+  width: .5rem;
+
+}
+
+
+.photo {
+
+  width: 24rem;
+  height: 24rem;
+  clip-path: circle(50% at 50% 50%);
+  background-image: url('./Images/picmee.jpg');
+  background-position: center;
+  background-size: cover;
+  shape-outside: circle(50% at 50% 50%);
+  display: flex;
+  margin-left: 40%;
+  margin-top: 8%;
+  justify-content: center;
+  align-items: center;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+
+  0% {
+        transform: translateY(10px);
+  }
+
+  100% {
+      transform: translateY(-10px);
+  }
+
+}
+
+@keyframes up-down {
+
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+
+}
+
+.myDetail h1 {
+
+  color: #fff;
+  text-align: center;
+  font-family: 'Sacramento', cursive;
+  font-weight: 500;
+  font-size: 6rem;
+  margin-top: 1.5rem;
+
+}
+
+.myDetail h4 {
+
+    color: #fff;
+    text-align-last: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 100;
+    padding: .4rem;
+    
+}
+
+/* About section */
+
+
+.avatar {
+
+  width: 25rem;
+  height: 25rem;
+  position: relative;
+  top: 20%;
+  left: 30%;
+  clip-path: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #868686;
+
+}
+
+.avatar img {
+
+    width: 32vw;
+    height: 32vh;
+    position: relative;
+    bottom: 12%;
+    
+}
+
+
+.aboutMe h1 {
+
+    font-size: 6rem;
+    color: #3a3a3a;
+    font-weight: 500;
+    margin-top: 6rem;
+
+}
+
+.aboutMe h5 {
+
+    font-size: 1.8rem;
+}
+
+.aboutMe p {
+
+      font-size: 2rem;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+}
+
+.social {
+
+    position: relative;
+    left: 0;
+    top: 6rem;
+}
+
+.resume Button {
+
+  border: none;
+  border-bottom: .2rem solid #ff4646;
+  position: absolute;
+  top: 34rem;
+  left: 16rem;
+  color: #000;
+  font-size: 1.5rem;
+  
+}
+
+
+/* Skills section */
+
+
+.skillPart {
+  width: 100%;
+  height: 100vh;
+  background-color: #d2d3c9;
+  position: relative;
+  top: 5rem;
+  
+}
+
+
+.skillPart h1  {
+
+  font-size: 6rem;
+  font-weight: 500;
+  line-height: .4rem;
+  position: relative;
+  top: 5rem;
+} 
+
+.skillHead1 img {
+
+    position: absolute;
+    top: 14rem !important;
+    left: 6rem;
+    width: 20vw;
+    height: 20vh;
+    opacity: 0.8;
+    border-radius: .4rem;
+
+}
+
+.skillHead1 img:hover {
+
+      width: 60%;
+      box-shadow: 0.4rem 0.1rem 0.4rem 0.1rem #000;
+      opacity: 0.9;
+
+}
+
+.skillHead1 h4 {
+
+    position: absolute;
+    top: 28rem;
+    left: 15rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.skillHead2 img {
+
+  position: absolute;
+  top: 40rem !important;
+  left: 5rem;
+  width: 15vw;
+  height: 20vh;
+  opacity: 0.8;
+  border-radius: .4rem;
+
+}
+.skillHead2 img:hover {
+
+  width: 70%;
+  box-shadow: 0.4rem 0.1rem 0.4rem 0.1rem #000;
+  opacity: 0.9;
+
+}
+
+.skillHead2 h4 {
+
+  position: absolute;
+  top: 54rem;
+  left: 9rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+/* Project section */
+
+.projectPart {
+
+      width: 100%;
+      height: 100vh;
+      background-color: #fff;
+      background-size: cover;
+      background-attachment: fixed;
+      position: relative;
+      top: 8rem !important;
+    
+      
+}
+.proHead {
+
+      font-size: 6rem;
+      font-weight: 500;
+      line-height: .4rem; 
+      text-align: center;
+      padding: 50px 0;
+} 
+
+.cardSec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+
+    width: 35rem !important;
+    height: auto;
+    margin: auto;
+    transition: 0.3s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 0.4rem 0.1rem 0.4rem 0.1rem #000000;
+}
+
+.card:hover {
+
+  transform: scale(1.05);
+  box-shadow: 0 0 4rem -1rem rgba(0, 0, 0, 0.25);
+
+}
+
+.card-title{
+
+    font-size: 2.5rem;
+
+}
+
+.card-text h5{
+
+  font-size: 2rem;
+
+}
+.cardPart2  {
+  position: relative;
+  top: 8rem !important;
+  bottom: 4rem !important;
+  
+}
+
+.card img {
+  width: 35rem;
+  height: 18rem;
+}
+
+.card-body {
+
+  background-color: #0a043c;
+  color: #fff;
+} 
+
+/* My Gallery */
+
+.slider  {
+
+  background-color: #d2d3c9;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  top: 45rem;
+}
+
+.slider h1 {
+
+    position: relative;
+    top: 5rem;
+    font-size: 4rem;
+}
+
+.slider img {
+
+    position: relative;
+    left: 5rem;
+    top: 8rem;
+    width: 125rem !important;
+    height: 55rem !important;
+}
+
+.slider h3 {
+  font-size: 3rem;
+}
+
+.slider p{
+  font-size: 2rem;
+}
+
+/* Footer section */
+
+.footer {
+
+  background-color: #fff;
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  top: 65rem;
+
+}
+
+.footer h1 {
+
+  font-family: 'Sacramento', cursive;
+  font-size: 6rem;
+  color: #40b0bd;
+  font-weight: 500;
+  position: relative;
+  bottom: 15rem;
+
+}
+
+
+.footer h5 {
+
+  color: #868686;
+  position: relative;
+  bottom: 14rem;
+  font-size: 2rem;
+
+}
+
+.socialFooter {
+
+    
+    position: relative; 
+    bottom: 14rem;
+    color: #868686;
+}
+
+.FootIcons h6{
+  font-size: 1.5rem;
+}
+
+.copyright h6 {
+  position: relative;
+  left: 0;
+  font-size: 1.5rem;
+  
+}
+
+.FootIcons {
+    position: relative;
+    left: 12rem;
+    font-size: 5rem;
+}
+
+.lastSocial {
+  width: 5rem;
+}
+
+.footerImg{
+    
+    position: relative;
+    bottom: 12rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Media Queries */
+
+/* for laptop desktop  */
+
+@media(max-width: 1200px) {
+
+  .resume Button {
+
+    position: absolute;
+    left: 14rem;  
+  }
+  
+  .skillHead1 h4 {
+
+    position: absolute;
+    top: 27rem;
+    left: 12rem;
+}
+
+.skillHead2 h4 {
+
+  position: absolute;
+  top: 53rem;
+  left: 6.5rem;
+}
+
+
+.projectPart {
+  max-width: 90%;
+  justify-content: space-around;
+  position: relative;
+  right: 4rem;
+}
+
+  .card {
+    max-width: 100%;
+    margin-left: 4rem;
+  }
+.card img {
+  max-width: 100%;
+
+}
+
+.card-title{
+
+  font-size: 2rem;
+  margin-left: 0;
+
+}
+
+.card-text h5{
+
+font-size: 1.5rem;
+margin-left: 0;
+
+}
+
+
+.slider img {
+
+  max-width: 100%;
+  position: relative;
+  left: 0;
+
+}
+
+.aboutMe h1,h5 {
+  margin-left: 5rem;
+}
+
+.aboutMe p {
+
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+    display: flex;
+  }
+
+
+  }
+
+  @media(max-width: 990px) {
+
+    
+.menu {
+
+  position: absolute;
+  left: 28%;
+  
+}
+.aboutMe h1 {
+  font-size: 4rem;
+  margin-left: 6rem;
+} 
+
+
+.aboutMe p, h5 {
+
+  font-size: 1.5rem;
+  margin: 0 auto;
+  margin-left: 6rem;
+}
+
+.resume Button {
+
+  position: absolute;
+  top: 28rem;
+  left: 10rem;
+  font-size: 1.2rem;
+}
+
+
+ 
+    .avatar {
+
+      width: 20rem;
+      height: 20rem;
+      position: relative;
+      top: 22%;
+      left: 34%;
+    
+    }
+    
+    .avatar img {
+    
+        width: 25vw;
+        height: 25vh;       
+    }
+        
+  .skillHead1 h4 {
+
+    font-size: 1.8rem;
+   
+}
+
+.skillHead2 h4 {
+
+  font-size: 1.8rem;
+ 
+}
+ 
+.chipDiv {
+  display: none;
+}
+
+.card-title {
+  font-size: 1.5rem;
+}
+.card-text h5{
+
+  display: none;
+
+  }
+.projectPart {
+  height: 65vh;
+} 
+
+.footerImg {
+
+    max-width: 50%;
+    margin-left: 18rem !important;
+}
+
+
+
+  }
+
+  @media(max-width: 800px) {
+
+        
+.menu {
+
+  position: absolute;
+  left: 20%;
+  font-size: 1.5rem;
+  
+}
+
+.photo {
+  position: relative;
+  right: 2rem;
+  top: 2rem;
+}
+
+.myDetail h1 {
+
+      margin-top: 4rem;
+      margin-left: 4rem;
+    
+    }
+    
+.myDetail h4 {
+      
+      margin-left: 4rem;
+
+  }
+
+  .skillHead1 h4 {
+
+    margin-left: -4rem;
+   
+}
+
+.skillHead2 h4 {
+
+  margin-left: -1.5rem;
+ 
+}
+
+
+.aboutMe h5 {
+
+  font-size: 1.2rem;
+}
+    
+.resume Button {
+
+  position: absolute;
+  top: 32rem;
+  left: 7rem;
+}
+
+.skillPart h1  {
+
+      font-size: 4rem;
+    } 
+
+.skillHead2 img {
+
+  max-width: 60%;
+
+}
+    
+.proHead{
+  font-size: 4rem;
+  position: relative;
+  top: -4rem;
+}    
+
+.card-title{
+
+  font-size: 1.2rem;
+
+}
+
+.slider h1 {
+
+  position: relative;
+  top: 2rem;
+  font-size: 4rem;
+}
+.slider h3 {
+  font-size: 2rem;
+}
+
+.slider p{
+  font-size: 1.5rem;
+}
+
+
+.card {
+  margin-top: -4rem;
+}
+  
+.footerImg img {
+
+  max-width: 80vw;
+}
+
+
+.FootIcons h6{
+  font-size: 1.5rem;
+}
+
+.copyright h6 {
+  position: relative;
+  top: 2rem;
+  left: 15rem;
+  font-size: 1.5rem;
+  
+}
+
+.FootIcons {
+    
+  display: none;
+  
+}
+
+  
+  }
+
+  @media(max-width: 600px) {
+    
+.Header {
+
+  height: 80vh;
+  margin-top: 1rem;
+
+}
+
+.menu {
+
+  font-size: 1.3rem;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  
+}
+
+
+.photo {
+
+  width: 20rem;
+  height: 20rem; 
+}
+
+
+.myDetail h1 {
+
+  font-weight: 200;
+  font-size: 4rem;
+  margin-top: 4rem;
+
+}
+
+.myDetail h4 {
+
+    font-size: 2rem;
+    font-weight: 100;
+    padding: .2rem;
+    
+}
+
+
+.avatar {
+
+  width: 18rem;
+  height: 18rem;
+  position: relative;
+  top: 12%;
+  left: 12rem;
+
+}
+
+.avatar img {
+
+    width: 28vw;
+    height: 28vh;
+    
+}
+.aboutMe h1 {
+
+  font-size: 4rem;
+  font-weight: 300;
+  margin: 0 auto;
+  position: relative;
+  right: 6rem;
+  text-align: center;
+  align-items: center;
+
+}
+
+.aboutMe h5 {
+
+  font-size: 1.2rem;
+  position: relative;
+  right: 10rem;
+}
+
+.aboutMe p {
+
+    font-size: 1.4rem;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    margin-top: 28rem;
+    position: relative;
+    right: 4rem;
+    display: flex;
+    
+}
+
+.social {
+
+  position: relative;
+  left: 0;
+  top: 6rem;
+}
+
+.resume Button {
+
+position: absolute;
+top: 28rem;
+left: 15rem;
+font-size: .9rem;
+
+}
+
+.projectPart {
+  display: none;
+}
+
+
+.skillPart {
+
+  display: none;
+  
+}
+
+.slider  {
+
+  background-color: #e55c4c;
+  position: relative;
+  top: 5rem;
+}
+.slider img {
+
+  position: relative;
+  top: 8rem;
+  left: 2rem;
+  max-width: 90%;
+  max-height: 60vh;
+}
+
+
+.footer h1 {
+
+  font-size: 5rem;
+  font-weight: 300;
+  position: relative;
+  bottom: 8rem;
+
+}
+
+.footer h5 {
+
+  position: relative;
+  bottom: 8rem;
+  font-size: 1.8rem;
+
+}
+ 
+.footerImg img {
+
+  max-width: 80vw;
+  margin-top: 10rem;
+  margin-right: 14rem;
+}
+
+.copyClass {
+  display: none;
+}
+
+.footer {
+
+  max-width: 90%;
+  position: relative;
+  top: 20rem;
+
+}
+
+
+
+  }
+
+@media(max-width: 400px) {
+
+  .Header {
+
+    height: 70vh;
+    padding: 2.5rem;
+    margin-top: 1rem;
+  
+  }
+  
+.photo {
+
+  width: 15rem;
+  height: 15rem; 
+}
+
+.myDetail h1 {
+
+  font-weight: 200;
+  font-size: 4rem;
+  margin-top: 6rem;
+
+}
+
+.myDetail h4 {
+
+    font-size: 1.5rem;
+    font-weight: 100;
+    
+}
+
+.avatar {
+
+  width: 17rem;
+  height: 17rem;
+  position: relative;
+  top: 10%;
+  left: 10rem;
+
+}
+ 
+.avatar img {
+
+  width: 35vw;
+  height: 35vh;
+  
+}
+
+
+.aboutMe h1 {
+
+  font-size: 3.5rem;
+}
+
+.aboutMe h5 {
+
+  font-size: 1.2rem;
+  position: relative;
+  top: .9rem;
+  right: 10rem;
+}
+
+.aboutMe p {
+
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    margin-top: 26rem;
+
+    
+}
+.resume Button {
+
+  position: absolute;
+  top: 24rem;
+  font-size: 100%;
+  
+  }
+  
+  .slider p{
+    display: none;
+  }
+
+  .slider  {
+
+    position: relative;
+    top: 5rem;
+    width: 100%;
+    height: 80vh;
+  }
+
+  .slider h1 {
+    font-size: 3rem;
+  }
+  
+   
+.footerImg img {
+
+  max-width: 75vw;
+  margin-top: 12rem;
+  margin-right: 16rem;
+}
+
+.menu {
+
+  display: none;
+}
+
+
+.footer h5 {
+
+  position: relative;
+  bottom: 8rem;
+  right: 2rem;
+  font-size: 1.5rem;
+
+}
+
+
+
+
+}
