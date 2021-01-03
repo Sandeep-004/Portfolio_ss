@@ -28,7 +28,7 @@ const About = () => {
 
                             <a href='https://www.linkedin.com/in/sandeep-sharma-63162619b/'><LinkedInIcon 
                            className='socialLogo' style = {{fontSize:'5rem', color:'#287bbc'}}/></a>
-                                
+                                 
 
                                 <a href='https://github.com/Sandeep-004'>  <GitHubIcon
                                 className='socialLogo' style = {{fontSize:'5rem', color:'#333'}}/></a>

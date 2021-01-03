@@ -1,16 +1,18 @@
 {
   "name": "myapp",
+  "homepage": "http://Sandeep-004.github.io/MyPortfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
-    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
     "aos": "^3.0.0-beta.6",
     "bootstrap": "^4.5.3",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^3.1.0",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-bootstrap-v5": "^1.4.0",
@@ -18,10 +20,12 @@
     "react-fa-icon": "^0.1.4",
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.3.1",
-    "react-scripts": "4.0.1",
+    "react-scripts": "^2.1.8",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
